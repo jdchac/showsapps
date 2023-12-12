@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contacto</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+<body>
+    <header>
+        <nav class="nav-logo">
+            <a href="index.html"><img src="imagenes para inicio/logo-transparente.png" alt="Logo de Mi Sitio Web" id="logo"></a>
+        </nav>
+        <button class="abrir-menu" id="abrir"><i class="bi bi-list"></i></button>
+        <div class="fullMenu" id="navMenu">
+        <nav class="nav-menu">
+          <button class="cerrar-menu" id="cerrar"><i class="bi bi-x-circle"></i></button>
+          <ul class="menu">
+            <li><a href="index.html" target="">Inicio</a></li>
+            <li><a href="#" target="">Boletos</a>
+                <ul class="submenu">
+                    <li><a href="boletos-roger.html">R. Waters</a></li>
+                    <li><a href="boletos-maria.html">M. Becerra</a></li>
+                    <li><a href="boletos-rhcp.html">Red Hot Chili Peppers</a></li>
+                    <li><a href="boletos-lola.html">Lollapalooza</a></li>
+                    
+                </ul>
+            </li>
+            <li><a href="galeria.html" target="">Galería</a></li>
+            <li><a href="contacto.html" target="">Contacto</a></li>
+            <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+        </ul>        
+        </nav>
+        <nav class="nav-login">
+                <ul class="login">
+                    <li><a href="login.html" target="_blank"><i class="bi bi-person-circle"></i> Iniciá Sesión</a></li>
+                </ul>    
+        </nav>
+        </div>
+    </header>
+    <main>
+      <div class="background-image">
+        <h2>¡Contactate con nosotros!</h2>
+        <form id="contactForm"  method="post">
+          <div class="input-container">
+            <label for="nombre"><i class="fas fa-user"></i> Nombre:</label><br>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required><br><br>
+          </div>
+      
+          <div class="input-container">
+            <label for="apellido"><i class="fas fa-user"></i> Apellido:</label><br>
+            <input type="text" id="apellido" name="apellido" placeholder="Tu apellido" required><br><br>
+          </div>
+      
+          <div class="input-container">
+            <label for="telefono"><i class="fas fa-phone"></i> Teléfono:</label><br>
+            <input type="tel" id="telefono" name="telefono" placeholder="Tu teléfono" required><br><br>
+          </div>
+      
+          <div class="input-container">
+            <label for="email"><i class="fas fa-envelope"></i> Email:</label><br>
+            <input type="email" id="email" name="email"  placeholder="Tu correo electrónico" required><br><br>
+          </div>
+      
+          <div class="input-container">
+            <label for="mensaje"><i class="fas fa-comment"></i> Mensaje:</label><br>
+            <textarea id="mensaje" name="mensaje" rows="4" cols="50" placeholder="Tu mensaje" required>
+            </textarea><br><br>
+          </div>
+      
+          <input type="submit" value="Enviar">
+        </form>
+        <div id="mensajeEnviado" style="display: none;">Datos enviados</div>
+      </div>
+         </section>  
+        <script src="index.js"></script>
+        <script src="js/formulario.js"></script>
+    </main>
+    <footer>
+        <p>&copy; CODO A CODO - GRUPO 5</p>
+    </footer>
+    </body>
+</html>

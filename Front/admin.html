@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Tabla de Mensajes</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+  <body>
+    <header>
+        <nav class="nav-logo">
+            <a href="index.html"><img src="imagenes para inicio/logo-transparente.png" alt="Logo de Mi Sitio Web" id="logo"></a>
+        </nav>
+        <button class="abrir-menu" id="abrir"><i class="bi bi-list"></i></button>
+        <div class="fullMenu" id="navMenu">
+        <nav class="nav-menu">
+          <button class="cerrar-menu" id="cerrar"><i class="bi bi-x-circle"></i></button>
+          <ul class="menu">
+            <li><a href="index.html" target="">Inicio</a></li>
+            <li><a href="#" target="">Boletos</a>
+                <ul class="submenu">
+                    <li><a href="boletos-roger.html">R. Waters</a></li>
+                    <li><a href="boletos-maria.html">M. Becerra</a></li>
+                    <li><a href="boletos-rhcp.html">Red Hot Chili Peppers</a></li>
+                    <li><a href="boletos-lola.html">Lollapalooza</a></li>
+                    
+                </ul>
+            </li>
+            <li><a href="galeria.html" target="">Galería</a></li>
+            <li><a href="contacto.html" target="">Contacto</a></li>
+            <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+        </ul>        
+        </nav>
+        <nav class="nav-login">
+                <ul class="login">
+                    <li><a href="login.html" target="_blank"><i class="bi bi-person-circle"></i> Iniciá Sesión</a></li>
+                </ul>    
+        </nav>
+        </div>
+    </header>
+    <div class="container mt-4">
+        <h1>Tabla de Mensajes</h1>
+        <button id="btnTraerMensajes" class="btn btn-primary mb-3">Traer Mensajes</button>
+        <table id="tablaMensajes" class="table">
+          <thead class="thead-dark">
+            <tr>
+              <th scope="col">Id</th>  
+              <th scope="col">Apellido</th>
+              <th scope="col">Nombre</th>
+              <th scope="col">Email</th>
+              <th scope="col">Fecha de Envío</th>
+              <th scope="col">Mensaje</th>
+              <th scope="col">Leído</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Aquí se llenarán dinámicamente las filas -->
+          </tbody>
+        </table>
+      </div>
+
+      <div class="container mt-4">
+        <h1>Formulario de Gestión</h1>
+        <form id="formularioContacto">
+          <div class="form-group">
+            <label for="idInput">ID</label>
+            <input type="text" class="form-control" id="idInput" placeholder="Ingrese el ID">
+          </div>
+          <div class="form-group">
+            <label for="detalleInput">Detalle de la Gestión</label>
+            <textarea class="form-control" id="detalleInput" rows="4" placeholder="Ingrese el detalle de la gestión"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+      </div>
+
+<script src="js/admin.js"></script>
+<footer>
+  <p>&copy; CODO A CODO - GRUPO 5</p>
+</footer>
+</body>
+</html>
